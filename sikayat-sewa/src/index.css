@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Basic smooth transitions */
+.ant-layout {
+    transition: all 0.2s ease-in-out;
+}
+
+.ant-table {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Prevent content jumping */
+* {
+    box-sizing: border-box;
+}
+
+/* Custom scrollbar for better UX */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
