@@ -11,6 +11,7 @@ const createAdmin = async () => {
         name: "Admin",
         email: "admin@example.com",
         password: await generateHash("Admin@123"),
+        isverified:true
       });
       await newAdmin.save();
       console.log("Admin created successfully");

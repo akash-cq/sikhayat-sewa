@@ -27,7 +27,7 @@ const getUserData = async (userId = "", email = "", option = {}) => {
 };
 
 const verifyUser = async (data) => {
-  const user = await getUserData("",data.email, {password:1,isverified:1});
+  const user = await getUserData("",data.email,);
   if (!user) {
     throw new CustomAppError("404 User not found");
   }

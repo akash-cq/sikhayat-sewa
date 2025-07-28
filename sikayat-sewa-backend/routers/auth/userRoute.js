@@ -13,7 +13,7 @@ const { LoginSchema, userCreationSchema }  = schemas;
 const router = express.Router();
 router.post("/login", async (req, res, next) => {
   try {
-    // console.log(req.body);
+    console.log(req.body);
     const data = LoginSchema.safeParse(req.body);
     // console.log(data.data);
     if (!data.success) {
